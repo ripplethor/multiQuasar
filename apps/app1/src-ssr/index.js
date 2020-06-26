@@ -39,7 +39,7 @@ app.use(ssr.resolveUrl('/'), serve('.', true))
 extension.extendApp({ app, ssr })
 
 // this should be last get(), rendering with SSR
-app.get(ssr.resolveUrl('/'+path.basename(path.resolve(__dirname))), (req, res) => {
+app.get(ssr.resolveUrl('/'+path.basename(path.resolve(__dirname))+'*'), (req, res) => {
   res.setHeader('Content-Type', 'text/html')
 
   // SECURITY HEADERS
