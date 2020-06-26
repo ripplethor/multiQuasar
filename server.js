@@ -55,7 +55,7 @@ app.use(
     }),
     resave: true,
     saveUninitialized: true,
-    secret: process.env.SESSION_SECRET,
+    secret: 'process.env.SESSION_SECRET',
   })
 );
 
