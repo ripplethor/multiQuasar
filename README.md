@@ -14,11 +14,12 @@
  Some changes are needed if you want to do this for your app, as follows:
  
  Inside the `quasar.conf` I have added an environment variable which is used within the routes.js file;
- 
+ You also need to change the distribution directory
 
       const path = require('path')
       ......
       build: {
+          distDir: __dirname+'/../.dist/'+path.basename(path.resolve(__dirname)),
           env: {
             "ROUTE_DIR": path.basename(path.resolve(__dirname))
           },
