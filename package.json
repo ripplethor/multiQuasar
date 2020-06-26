@@ -34,7 +34,7 @@
     "quasar": "1.12.8"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.11.2",
+    "@quasar/app": "^2.0.1",
     "webpack-bundle-analyzer": "^3.8.0"
   }
 }
