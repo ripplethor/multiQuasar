@@ -33,3 +33,6 @@ When this has finished make sure you are in the root and then type
  `node server.js`
 
 You should be then able to browser your localhost on port 3000 followed by the app directory name (as shown above).
+
+As a side note... if you drop an app into the apps folder, make sure to copy any package Dependencies into the root package.json
+
